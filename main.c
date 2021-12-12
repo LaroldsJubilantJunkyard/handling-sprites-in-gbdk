@@ -18,8 +18,8 @@ void main(void)
     spriteY=72;
 
     // Set our default velocity to be moving down and to the right
-    velocityX=1;
-    velocityY=1;
+    velocityX=0;
+    velocityY=0;
 
     // Loop forever
     while(1) {
@@ -27,46 +27,6 @@ void main(void)
         // Apply our velocity
         spriteX+=velocityX;
         spriteY+=velocityY;
-
-        // When we get too far to the right while moving to the right
-        if(spriteX>156&&velocityX>0){
-
-            // Switch directions for our x velocity
-            velocityX=-velocityX;
-
-            // Clamp our x position back down to 156 so we don't go past the edge
-            spriteX=156;
-        }
-
-        // When we get too far down on the screen while moving downards
-        if(spriteY>140&&velocityY>0){
-
-            // Switch directions for our y velocity
-            velocityY=-velocityY;
-
-            // Clamp our y position back down to 140 so we don't go past the edge
-            spriteY=140;
-        }
-
-        // When we get too far to the left while moving left
-        if(spriteX<4&&velocityX<0){
-
-            // Switch directions for our x velocity
-            velocityX=-velocityX;
-
-            // Clamp our x position back up to 4 so we don't go past the edge
-            spriteX=4;
-        }
-
-        // When we get too far towards the top of the screen while moving upwards
-        if(spriteY<4&&velocityY<0){
-
-            // Switch directions for our y velocity
-            velocityY=-velocityY;
-
-            // Clamp our y position back up to 4 so we don't go past the edge
-            spriteY=4;
-        }
 
         // Position the first sprite at our spriteX and spriteY
         // All sprites are render 8 pixels to the left of their x position and 16 pixels ABOVE their actual y position
