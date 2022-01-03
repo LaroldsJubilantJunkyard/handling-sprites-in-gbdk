@@ -1,5 +1,5 @@
 [LaroldsJubilantJunkard.com](LaroldsJubilantJunkard.com) - [How to make a Gameboy Game](LaroldsJubilantJunkard.com/tutorials/how-to-make-a-gameboy-game)
-# Minimal Gameboy Project
+# How to handle Gameboy Joypad input 
 
 This repository gives a basic example of how to handle gameboy joypad input in GBDK 2020. Check out the (full tutorial)[https://laroldsjubilantjunkyard.com/tutorials/how-to-make-a-gameboy-game/joypad-input/].
 
